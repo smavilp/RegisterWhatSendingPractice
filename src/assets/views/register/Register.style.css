@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+.Register {
+  background: var(--bg-color-1);
+  background: linear-gradient(
+    90deg,
+    var(--bg-color-1) 0%,
+    var(--bg-color-2) 100%
+  );
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+@media screen and (min-width: 1025px) {
+  .Register {
+    background-color: var(--bg-color-2);
+    background: none;
+  }
+}
+
+.Register__div--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+  padding: 0 0.5em;
+  margin-top: 4em;
+  max-width: 32em;
+}
+
+@media screen and (min-width: 1025px) {
+  .Register__div--container {
+    max-width: 45;
+  }
+}
+
+.Register__div--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+@media screen and (min-width: 1025px) {
+  .Register__div--text {
+    max-width: none;
+  }
+}
+
+.Register__h1 {
+  color: var(--title-color);
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media screen and (min-width: 1025px) {
+  .Register__h1 {
+    font-size: 2em;
+  }
+}
+
+.Register__p {
+  color: var(--text-color);
+  font-size: 0.6em;
+  text-align: center;
+}
+
+@media screen and (min-width: 1025px) {
+  .Register__p {
+    color: var(--placeholder-color);
+    font-size: 1em;
+  }
+}
+
+.Register__span {
+  color: var(--placeholder-color);
+  display: none;
+  margin: 2em 0 1em 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .Register__span {
+    display: block;
+  }
+}
